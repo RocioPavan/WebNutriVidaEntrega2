@@ -1,0 +1,211 @@
+body {
+  background-color: #ffffff; /* Color crema */
+  background-size: 100%; /* Tamaño del patrón */
+  font-family: Arial, sans-serif; /* Cambia la fuente a Arial si está disponible, de lo contrario, usa una fuente genérica sans-serif */
+  margin: 0; /* Elimina el margen por defecto del body */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la pantalla */
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+* {
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total de los elementos */
+}
+
+nav {
+  background-color: #86EBDF; /* Color de fondo */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+}
+
+nav ul {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  list-style: none; /* Elimina los puntos de la lista */
+}
+
+nav ul li {
+  display: inline-block; /* Muestra los elementos de la lista en línea */
+  margin-right: 10px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+  color: #000000; /* Color del texto */
+  text-decoration: none; /* Elimina subrayado */
+  font-size: 18px; /* Tamaño de fuente */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Cambio de color al pasar el ratón */
+}
+
+.titulo {
+  color: #6085CD;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 105px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.subtitulo {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  margin: 10px auto; /* Centra la galería horizontalmente */
+  background-color: #fff;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas nuevas si no caben en una sola */
+  margin-bottom: 10px; /* Ajusta el margen inferior para reducir el espacio */
+}
+
+.image-gallery img {
+  width: 290px;
+  height: 210px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Añade margen alrededor de cada imagen */
+}
+
+.parrafo {
+  font-size: 25px;
+  text-align: center;
+  margin: -60px;
+}
+
+.teesperamos {
+  font-size: 30px;
+  color: #6085CD;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+footer {
+  width: 100%;
+  background-color: #86EBDF;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Empuja el footer al final de la página */
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 60px; /* Ajusta el tamaño de fuente en pantallas más pequeñas */
+  }
+
+  .subtitulo {
+    font-size: 25px; /* Ajusta el tamaño de fuente en pantallas más pequeñas */
+  }
+
+  .image-gallery {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    max-width: 350px; /* Limita el ancho máximo de las imágenes en pantallas más pequeñas */
+    height: auto; /* Mantiene la proporción de las imágenes */
+  }
+
+  .parrafo {
+    font-size: 20px; /* Ajusta el tamaño de fuente en pantallas más pequeñas */
+  }
+
+  .teesperamos {
+    font-size: 30px; /* Ajusta el tamaño de fuente en pantallas más pequeñas */
+  }
+}
+
+.mision, .vision, .valores {
+  background-color: #E6FCFB; /* Color de fondo celeste */
+  border: 1px solid #b6b1b1; /* Borde de color negro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Espaciado externo */
+  max-width: 1300px; /* Ancho máximo del contenedor */
+
+}
+
+.mision h3, .vision h3, .valores h3 {
+  font-size: 30px;
+  color: #6085CD;
+  margin: auto;
+
+}
+
+.mision p, .vision p, .valores ul {
+  font-size: 20px;
+  color: #000000;
+
+}
+
+main {
+  display: flex; /* Flexbox para centrar el contenido */
+  flex-direction: column; /* Alinea el contenido en una columna */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  flex: 1; /* Hace que el main ocupe el espacio disponible */
+  width: 100%; /* Ancho del 100% */
+  padding: 20px; /* Espaciado interno */
+}
+
+
+.entrenamiento h3, .asesoramiento h3, .grupos h3, .coaching h3 {
+  font-size: 30px;
+  color: #6085CD;
+  text-align: center;
+}
+
+.entrenamiento, .asesoramiento, .grupos, .coaching {
+  background-color: #E6FCFB; /* Color de fondo celeste */
+  border: 1px solid #b6b1b1; /* Borde de color negro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Espaciado externo */
+  max-width: 1300px; /* Ancho máximo del contenedor */ 
+  text-align: center;
+}
+
+.entrenamiento p, .asesoramiento p, .grupos p, .coaching p {
+  font-size: 20px;
+  margin: auto;
+}
+
+.contact {
+  background-color: #E6FCFB; /* Color de fondo celeste */
+  border: 1px solid #b6b1b1; /* Borde de color negro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 50px; /* Espaciado interno */
+  margin: 20px; /* Espaciado externo */
+  max-width: 1000px; /* Ancho máximo del contenedor */ 
+  max-height: 1000px;
+  text-align: center;
+}
+
+.contacto {
+  font-size: 50px;
+  margin: 0;
+  color: #6085CD;
+}
+
+.contact h3 {
+  font-size: 25px;
+  color: #6085CD;
+}
+
+.contact p {
+  font-size: 20px;
+}
